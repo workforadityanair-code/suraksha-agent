@@ -1,0 +1,11 @@
+FROM python:3.11-slim
+
+# Create unprivileged user
+RUN useradd -m -u 1001 sandboxuser
+WORKDIR /home/sandboxuser/app
+
+# Install standard networking libraries
+RUN pip install --no-cache-dir requests urllib3 httpx
+
+USER sandboxuser
+ENTRYPOINT ["python3"]
