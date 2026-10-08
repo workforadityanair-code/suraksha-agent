@@ -13,5 +13,13 @@ SurakshaAgent isolates client integration scripts inside resource-constrained Do
 ## Getting Started
 
 ### 1. Build the Sandbox
-```bash
+
 docker build -t dpi-sandbox:latest -f docker/Dockerfile.sandbox .
+
+2. Start the Mock Gateway
+Bash
+python mock_dpi/server.py
+3. Run the Security Auditor
+Bash
+python main.py
+
