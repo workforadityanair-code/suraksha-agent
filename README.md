@@ -1,4 +1,4 @@
-# SurakshaAgent 
+# SurakshaAgent 🛡️
 
 An autonomous, sandboxed security auditor designed to evaluate untrusted client workloads targeting Indian Digital Public Infrastructure (DPI) specifications (UPI, ONDC/Beckn Protocol).
 
